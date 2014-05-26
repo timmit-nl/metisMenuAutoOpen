@@ -1,0 +1,31 @@
+{
+  "name": "metisMenuAutoOpen",
+  "version": "0.0.1",
+  "authors": [
+    "Tim Schoondergang <tim.schoondergang@timmit.nl>"
+  ],
+  "description": "metisMenu with auto open on url",
+  "main": "jquery.metisMenuAutoOpen.js",
+  "keywords": [
+    "metisMenu",
+    "Menu",
+    "auto",
+    "open",
+    "metis"
+  ],
+  "license": "MIT",
+  "homepage": "http://git.timmit.nl/timmit/metismenuautoopen",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public_html/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "metisMenu": "~1.0.1",
+    "bootstrap": "~3.1.1"
+  }
+}
