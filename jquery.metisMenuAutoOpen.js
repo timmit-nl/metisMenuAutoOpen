@@ -3,7 +3,7 @@
     var pluginName = "metisMenuAutoOpen",
         defaults = {
             classToAdd: 'current-page-item',
-            currentLocation = window.location
+            currentLocation: window.location
         };
         
     function Plugin(element, options) {
@@ -18,22 +18,25 @@
         init: function () {
 
             var $this_element = $(this.element),
-                $classToAdd = this.settings.classToAdd;
+                $classToAdd = this.settings.classToAdd,
+								$currentLocation = this.settings.currentLocation;
 
-						
-							var currentLocation = this.settings.currentLocation;
-						
+
+							if (!window.location.origin){
+   							window.location.origin = window.location.protocol+"//"+window.location.host;
+							}
+							$currentLocation = window.location.origin + $currentLocation;
+							
+							
 							$this_element.find("li .nav-second-level li a").each(function(){
 						    //var classname = $(this).attr('class');
 						    var url = $(this).prop('href');
 						    
-								if(currentLocation == url){
-									//alert(currentLocation);
+								if($currentLocation == url){
 									$(this).parentsUntil('ul').addClass($classToAdd);
 									$(this).parentsUntil('.nav-second-level').parent().addClass("in");
 									$(this).parentsUntil('#side-menu','li:not(.'+$classToAdd+')').addClass("active");
 									return false;
-									//ale:rt()'++';
 								}    
 						
 						
