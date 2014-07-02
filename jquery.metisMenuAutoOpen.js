@@ -2,7 +2,8 @@
 
     var pluginName = "metisMenuAutoOpen",
         defaults = {
-            classToAdd: 'current-page-item'
+            classToAdd: 'current-page-item',
+            currentLocation = window.location
         };
         
     function Plugin(element, options) {
@@ -20,7 +21,7 @@
                 $classToAdd = this.settings.classToAdd;
 
 						
-							var currentLocation = window.location;
+							var currentLocation = this.settings.currentLocation;
 						
 							$this_element.find("li .nav-second-level li a").each(function(){
 						    //var classname = $(this).attr('class');
