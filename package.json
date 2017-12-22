@@ -1,0 +1,12 @@
+{
+  "name": "metisMenuAutoOpen",
+  "version": "1.0.0",
+  "description": "metisMenu with auto open on url",
+  "main": "jquery.metisMenuAutoOpen.js",
+  "repository": {
+    "url": "https://github.com/timmit-nl/metisMenuAutoOpen",
+    "type": "git"
+  },
+  "author": "Tim Schoondergang <tim.schoondergang@timmit.nl>",
+  "license": "MIT"
+}
