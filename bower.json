@@ -1,6 +1,6 @@
 {
   "name": "metisMenuAutoOpen",
-  "version": "0.0.8",
+  "version": "1.0.0",
   "authors": [
     "Tim Schoondergang <tim.schoondergang@timmit.nl>"
   ],
@@ -25,6 +25,6 @@
   ],
   "dependencies": {
     "jquery": ">2.1.1",
-    "metisMenu": ">1.0.0 <1.2.0"
+    "metisMenu": ">1.2.0"
   }
 }
