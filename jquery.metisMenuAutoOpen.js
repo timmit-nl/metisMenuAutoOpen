@@ -45,7 +45,8 @@
             });
         }
     };
-    _jquery.fn[pluginName] = function(options) {
+     $.fn[pluginName] = function(options) {
+   // _jquery.fn[pluginName] = function(options) {
         return this.each(function() {
             if (!_jquery.data(this, "plugin_" + pluginName)) {
                 _jquery.data(this, "plugin_" + pluginName, new Plugin(this, options));
